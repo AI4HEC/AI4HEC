@@ -1,0 +1,22 @@
+# Assets Folder
+
+This folder is for storing images, icons, and other static assets for the AI4HEC website.
+
+## Recommended Structure:
+- `images/` - General images and photos
+- `icons/` - Logo, favicon, and icon files
+- `team/` - Team member photos
+
+## Image Guidelines:
+- Use optimized images (compressed, web-friendly formats)
+- Recommended formats: WebP, PNG, JPG
+- Keep individual file sizes under 500KB when possible
+- Use descriptive filenames (e.g., `elephant-detection-system.jpg`)
+
+## Adding a Favicon:
+1. Create a 32x32 or 64x64 pixel icon
+2. Save as `favicon.ico` in this folder
+3. Add to `<head>` in index.html:
+   ```html
+   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+   ```
