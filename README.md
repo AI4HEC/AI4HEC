@@ -1,9 +1,9 @@
 # AI4HEC - Official Website
 
-![AI4HEC Banner](https://img.shields.io/badge/AI4HEC-Human--Elephant%20Coexistence-blue)
+![AI4HEC Banner](https://img.shields.io/badge/AI4HEC-Human--Elephant%20Conflict%20Sri%20Lanka-blue)
 ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Enabled-success)
 
-Welcome to the official repository for the **AI4HEC** (AI for Human-Elephant Coexistence) organization website. This is a static landing page hosted on GitHub Pages.
+Welcome to the official repository for the **AI4HEC** (AI-Based Solutions for Human-Elephant Conflict in Sri Lanka) organization website. This is a static landing page hosted on GitHub Pages.
 
 ## 🌐 Live Website
 
@@ -161,5 +161,5 @@ This is the official AI4HEC organization website. For contributions:
 ---
 
 **© 2025 AI4HEC | University of Peradeniya**  
-*AI for Human-Elephant Coexistence*
+*AI-Based Solutions for Human-Elephant Conflict in Sri Lanka*
 About the project!

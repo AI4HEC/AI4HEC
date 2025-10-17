@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AI4HEC - AI-Based Solutions for Human-Elephant Coexistence at University of Peradeniya">
-    <title>AI4HEC | AI for Human-Elephant Coexistence</title>
+    <meta name="description" content="AI4HEC - AI-Based Solutions for Human-Elephant Conflict in Sri Lanka at University of Peradeniya">
+    <title>AI4HEC | AI-Based Solutions for Human-Elephant Conflict in Sri Lanka</title>
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -21,7 +21,7 @@
     <header class="bg-gradient-to-r from-blue-900 to-purple-900 py-20">
         <div class="container mx-auto px-6 text-center">
             <h1 class="text-5xl md:text-6xl font-bold mb-4">AI4HEC</h1>
-            <p class="text-xl md:text-2xl text-gray-300">AI-Based Solutions for Human-Elephant Coexistence</p>
+            <p class="text-xl md:text-2xl text-gray-300">AI-Based Solutions for Human-Elephant Conflict in Sri Lanka</p>
             <div class="mt-8">
                 <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-300">
                     Explore Our Projects
@@ -36,7 +36,7 @@
             <h2 class="text-4xl font-bold text-center mb-8">About AI4HEC</h2>
             <div class="max-w-4xl mx-auto">
                 <p class="text-lg text-gray-300 leading-relaxed mb-6">
-                    AI4HEC (AI for Human-Elephant Coexistence) is a pioneering research initiative at the 
+                    AI4HEC (AI-Based Solutions for Human-Elephant Conflict in Sri Lanka) is a pioneering research initiative at the 
                     <strong>University of Peradeniya</strong>, Sri Lanka. Our mission is to develop innovative, 
                     technology-driven solutions to mitigate human-elephant conflict—one of the most pressing 
                     conservation challenges in our region.
@@ -61,85 +61,24 @@
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-12">Our Projects</h2>
             
+            <!-- Loading indicator -->
+            <div id="projects-loading" class="text-center text-gray-400">
+                <i class="fas fa-spinner fa-spin text-4xl mb-4"></i>
+                <p>Loading repositories...</p>
+            </div>
+            
+            <!-- Error message (hidden by default) -->
+            <div id="projects-error" class="hidden text-center text-red-400 mb-8">
+                <i class="fas fa-exclamation-circle text-4xl mb-4"></i>
+                <p>Unable to load repositories. Showing fallback projects.</p>
+            </div>
+            
             <!-- 
-                UPDATE: To add a new project, copy one of the project cards below and update:
-                - href: GitHub repository URL
-                - Icon: change the fa-* class for different icons
-                - Title: project repository name
-                - Description: brief description of the project
+                Projects will be dynamically loaded from GitHub API.
+                The grid below serves as fallback if API fails.
             -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <!-- Project Card 1 -->
-                <div class="project-card bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition duration-300">
-                    <a href="https://github.com/AI4HEC/tmd_fw_v2" target="_blank" class="block">
-                        <div class="flex items-center mb-4">
-                            <i class="fas fa-microchip text-3xl text-blue-500 mr-3"></i>
-                            <h3 class="text-xl font-semibold">tmd_fw_v2</h3>
-                        </div>
-                        <p class="text-gray-400">Train Mounted Device Firmware v2.0 - Advanced firmware for railway-based elephant detection and warning systems.</p>
-                        <div class="mt-4 text-blue-400 hover:text-blue-300">
-                            View Repository <i class="fas fa-arrow-right ml-2"></i>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Project Card 2 -->
-                <div class="project-card bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition duration-300">
-                    <a href="https://github.com/AI4HEC/engex_game" target="_blank" class="block">
-                        <div class="flex items-center mb-4">
-                            <i class="fas fa-gamepad text-3xl text-purple-500 mr-3"></i>
-                            <h3 class="text-xl font-semibold">engex_game</h3>
-                        </div>
-                        <p class="text-gray-400">Game to Stop the Train - Interactive simulation system for training and emergency response protocols.</p>
-                        <div class="mt-4 text-blue-400 hover:text-blue-300">
-                            View Repository <i class="fas fa-arrow-right ml-2"></i>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Project Card 3 -->
-                <div class="project-card bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition duration-300">
-                    <a href="https://github.com/AI4HEC/eng_ex_gui" target="_blank" class="block">
-                        <div class="flex items-center mb-4">
-                            <i class="fas fa-desktop text-3xl text-green-500 mr-3"></i>
-                            <h3 class="text-xl font-semibold">eng_ex_gui</h3>
-                        </div>
-                        <p class="text-gray-400">Real-time Detection GUI - User interface for monitoring and managing elephant detection systems in real-time.</p>
-                        <div class="mt-4 text-blue-400 hover:text-blue-300">
-                            View Repository <i class="fas fa-arrow-right ml-2"></i>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Project Card 4 -->
-                <div class="project-card bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition duration-300">
-                    <a href="https://github.com/AI4HEC/ad_pi_fw" target="_blank" class="block">
-                        <div class="flex items-center mb-4">
-                            <i class="fas fa-volume-up text-3xl text-yellow-500 mr-3"></i>
-                            <h3 class="text-xl font-semibold">ad_pi_fw</h3>
-                        </div>
-                        <p class="text-gray-400">Speaker Array Firmware - Firmware for directional audio deterrent systems to guide elephant movement safely.</p>
-                        <div class="mt-4 text-blue-400 hover:text-blue-300">
-                            View Repository <i class="fas fa-arrow-right ml-2"></i>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Project Card 5 -->
-                <div class="project-card bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition duration-300">
-                    <a href="https://github.com/AI4HEC/audio_analysis" target="_blank" class="block">
-                        <div class="flex items-center mb-4">
-                            <i class="fas fa-waveform-lines text-3xl text-red-500 mr-3"></i>
-                            <h3 class="text-xl font-semibold">audio_analysis</h3>
-                        </div>
-                        <p class="text-gray-400">Directional Audio System - Advanced audio analysis tools for spatial sound processing and elephant localization.</p>
-                        <div class="mt-4 text-blue-400 hover:text-blue-300">
-                            View Repository <i class="fas fa-arrow-right ml-2"></i>
-                        </div>
-                    </a>
-                </div>
-
+            <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Projects will be inserted here dynamically -->
             </div>
         </div>
     </section>
@@ -209,12 +148,12 @@
             
             <div class="border-t border-gray-800 pt-8 mt-8 text-center text-gray-500">
                 <p>&copy; 2025 AI4HEC | University of Peradeniya</p>
-                <p class="mt-2 text-sm">AI for Human-Elephant Coexistence</p>
+                <p class="mt-2 text-sm">AI-Based Solutions for Human-Elephant Conflict in Sri Lanka</p>
             </div>
         </div>
     </footer>
 
-    <!-- Smooth Scroll Script -->
+    <!-- Scripts -->
     <script>
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -229,6 +168,155 @@
                 }
             });
         });
+
+        // GitHub API Integration - Fetch repositories dynamically
+        const GITHUB_ORG = 'AI4HEC';
+        const GITHUB_API_URL = `https://api.github.com/orgs/${GITHUB_ORG}/repos`;
+        
+        // Icon mapping based on repository name patterns or topics
+        const iconMap = {
+            'tmd_fw_v2': { icon: 'fa-microchip', color: 'text-blue-500' },
+            'engex_game': { icon: 'fa-gamepad', color: 'text-purple-500' },
+            'eng_ex_gui': { icon: 'fa-desktop', color: 'text-green-500' },
+            'ad_pi_fw': { icon: 'fa-volume-up', color: 'text-yellow-500' },
+            'audio_analysis': { icon: 'fa-waveform-lines', color: 'text-red-500' },
+            // Default patterns
+            'firmware': { icon: 'fa-microchip', color: 'text-blue-500' },
+            'gui': { icon: 'fa-desktop', color: 'text-green-500' },
+            'audio': { icon: 'fa-volume-up', color: 'text-yellow-500' },
+            'game': { icon: 'fa-gamepad', color: 'text-purple-500' },
+            'api': { icon: 'fa-server', color: 'text-cyan-500' },
+            'web': { icon: 'fa-globe', color: 'text-teal-500' },
+            'default': { icon: 'fa-code', color: 'text-gray-400' }
+        };
+
+        // Function to get icon for repository
+        function getRepoIcon(repoName) {
+            // Check exact match first
+            if (iconMap[repoName]) {
+                return iconMap[repoName];
+            }
+            
+            // Check for pattern matches
+            const nameLower = repoName.toLowerCase();
+            for (const [key, value] of Object.entries(iconMap)) {
+                if (nameLower.includes(key)) {
+                    return value;
+                }
+            }
+            
+            return iconMap.default;
+        }
+
+        // Fallback projects (in case API fails)
+        const fallbackProjects = [
+            {
+                name: 'tmd_fw_v2',
+                html_url: 'https://github.com/AI4HEC/tmd_fw_v2',
+                description: 'Train Mounted Device Firmware v2.0 - Advanced firmware for railway-based elephant detection and warning systems.',
+                stargazers_count: 0
+            },
+            {
+                name: 'engex_game',
+                html_url: 'https://github.com/AI4HEC/engex_game',
+                description: 'Game to Stop the Train - Interactive simulation system for training and emergency response protocols.',
+                stargazers_count: 0
+            },
+            {
+                name: 'eng_ex_gui',
+                html_url: 'https://github.com/AI4HEC/eng_ex_gui',
+                description: 'Real-time Detection GUI - User interface for monitoring and managing elephant detection systems in real-time.',
+                stargazers_count: 0
+            },
+            {
+                name: 'ad_pi_fw',
+                html_url: 'https://github.com/AI4HEC/ad_pi_fw',
+                description: 'Speaker Array Firmware - Firmware for directional audio deterrent systems to guide elephant movement safely.',
+                stargazers_count: 0
+            },
+            {
+                name: 'audio_analysis',
+                html_url: 'https://github.com/AI4HEC/audio_analysis',
+                description: 'Directional Audio System - Advanced audio analysis tools for spatial sound processing and elephant localization.',
+                stargazers_count: 0
+            }
+        ];
+
+        // Function to create project card HTML
+        function createProjectCard(repo) {
+            const icon = getRepoIcon(repo.name);
+            const description = repo.description || 'No description available.';
+            const stars = repo.stargazers_count || 0;
+            
+            return `
+                <div class="project-card bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition duration-300">
+                    <a href="${repo.html_url}" target="_blank" class="block">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                <i class="fas ${icon.icon} text-3xl ${icon.color} mr-3"></i>
+                                <h3 class="text-xl font-semibold">${repo.name}</h3>
+                            </div>
+                            ${stars > 0 ? `<span class="text-gray-400 text-sm"><i class="fas fa-star text-yellow-500"></i> ${stars}</span>` : ''}
+                        </div>
+                        <p class="text-gray-400">${description}</p>
+                        <div class="mt-4 text-blue-400 hover:text-blue-300">
+                            View Repository <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </a>
+                </div>
+            `;
+        }
+
+        // Function to render projects
+        function renderProjects(repos) {
+            const grid = document.getElementById('projects-grid');
+            const loading = document.getElementById('projects-loading');
+            const error = document.getElementById('projects-error');
+            
+            loading.style.display = 'none';
+            
+            if (repos && repos.length > 0) {
+                // Filter out the github.io repository (this website itself)
+                const filteredRepos = repos.filter(repo => !repo.name.includes('.github.io'));
+                
+                // Sort by stars (descending) then by name
+                filteredRepos.sort((a, b) => {
+                    if (b.stargazers_count !== a.stargazers_count) {
+                        return b.stargazers_count - a.stargazers_count;
+                    }
+                    return a.name.localeCompare(b.name);
+                });
+                
+                grid.innerHTML = filteredRepos.map(createProjectCard).join('');
+            } else {
+                error.classList.remove('hidden');
+                grid.innerHTML = fallbackProjects.map(createProjectCard).join('');
+            }
+        }
+
+        // Fetch repositories from GitHub API
+        async function fetchRepositories() {
+            try {
+                const response = await fetch(GITHUB_API_URL, {
+                    headers: {
+                        'Accept': 'application/vnd.github.v3+json'
+                    }
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`GitHub API returned ${response.status}`);
+                }
+                
+                const repos = await response.json();
+                renderProjects(repos);
+            } catch (error) {
+                console.error('Error fetching repositories:', error);
+                renderProjects(fallbackProjects);
+            }
+        }
+
+        // Load repositories when page loads
+        document.addEventListener('DOMContentLoaded', fetchRepositories);
     </script>
 
 </body>
