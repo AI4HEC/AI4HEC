@@ -126,10 +126,11 @@ For deeper customization, edit `style.css`.
 ### Adding a Logo/Favicon
 
 1. Place your logo in `assets/icons/`
-2. Add to the `<head>` section of `index.html`:
-   ```html
-   <link rel="icon" type="image/png" href="assets/icons/favicon.png">
-   ```
+2. Favicon is pre-wired. Just add your PNG at:
+   - `assets/icons/favicon.png` (32x32 recommended)
+   - Optional: `assets/icons/apple-touch-icon.png` (180x180)
+
+If you need to change the path, edit the `<head>` of `index.html` where the favicon link is defined.
 
 ## 🔧 Technologies Used
 
